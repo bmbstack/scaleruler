@@ -1,17 +1,6 @@
 # ScaleRuler
 身高、体重横向滚动刻度尺选择器
 
-效果图如下：
-
-![image](https://github.com/ZBJDSBJ/ScaleRuler/blob/master/app/src/main/res/raw/scaleruler1.jpg)
-
-![image](https://github.com/ZBJDSBJ/ScaleRuler/blob/master/app/src/main/res/raw/scaleruler2.jpg)
-
-![image](https://github.com/ZBJDSBJ/ScaleRuler/blob/master/app/src/main/res/raw/scaleruler3.jpg)
-
-![image](https://github.com/ZBJDSBJ/ScaleRuler/blob/master/app/src/main/res/raw/scaleruler4.jpg)
-
-
 使用：
 
 ```html
@@ -24,5 +13,18 @@
         android:paddingLeft="30dp"
         android:paddingRight="30dp" />
 ```
+
+效果图如下：
+
+![image](https://github.com/ZBJDSBJ/ScaleRuler/blob/master/app/src/main/res/raw/scaleruler1.jpg)
+
+![image](https://github.com/ZBJDSBJ/ScaleRuler/blob/master/app/src/main/res/raw/scaleruler2.jpg)
+
+![image](https://github.com/ZBJDSBJ/ScaleRuler/blob/master/app/src/main/res/raw/scaleruler3.jpg)
+
+![image](https://github.com/ZBJDSBJ/ScaleRuler/blob/master/app/src/main/res/raw/scaleruler4.jpg)
+
+
+
 
 
