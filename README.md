@@ -35,6 +35,18 @@ mWeightRulerView.setParam(DrawUtil.dip2px(10), DrawUtil.dip2px(32), DrawUtil.dip
 ```
 
 ```html
+<com.lost.zou.scaleruler.view.SlantedTextView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:slantedBackgroundColor="@color/colorPrimary"
+            app:slantedLength="28dp"
+            app:slantedMode="left"
+            app:slantedText="体重"
+            app:slantedTextColor="#ffffff"
+            app:slantedTextSize="14sp" />
+```
+
+```html
 <com.lost.zou.scaleruler.view.ScaleRulerView
         android:id="@+id/scaleWheelView_height"
         android:layout_width="match_parent"
