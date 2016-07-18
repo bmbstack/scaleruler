@@ -1,4 +1,5 @@
-# ScaleRuler
+#博客: http://blog.csdn.net/zbjdsbj/article/details/51180011
+ScaleRuler
 身高、体重横向滚动刻度尺选择器
 
 更新：
