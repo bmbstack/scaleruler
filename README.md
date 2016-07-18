@@ -19,6 +19,8 @@
             
             
 ```
+
+```html
 mWeightRulerView.setParam(DrawUtil.dip2px(10), DrawUtil.dip2px(32), DrawUtil.dip2px(24),
                 DrawUtil.dip2px(14), DrawUtil.dip2px(9), DrawUtil.dip2px(12));
         mWeightRulerView.initViewParam(mWeight, 20.0f, 200.0f, 1);
@@ -26,10 +28,10 @@ mWeightRulerView.setParam(DrawUtil.dip2px(10), DrawUtil.dip2px(32), DrawUtil.dip
             @Override
             public void onValueChange(float value) {
                 mWeightValueTwo.setText(value + "kg");
-
                 mWeight = value;
             }
         });
+```
 
 ```html
 <com.lost.zou.scaleruler.view.ScaleRulerView
