@@ -5,6 +5,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.lost.zou.scaleruler.utils.DrawUtil;
+import com.lost.zou.scaleruler.view.DecimalScaleRulerView;
 import com.lost.zou.scaleruler.view.ScaleRulerView;
 
 import butterknife.Bind;
@@ -28,12 +30,18 @@ public class MainActivity extends AppCompatActivity {
     @Bind(R.id.tv_user_weight_value)
     TextView mWeightValue;
 
+
+    @Bind(R.id.ruler_weight)
+    DecimalScaleRulerView mWeightRulerView;
+    @Bind(R.id.tv_user_weight_value_two)
+    TextView mWeightValueTwo;
+
     private float mHeight = 170;
     private float mMaxHeight = 220;
     private float mMinHeight = 100;
 
 
-    private float mWeight = 65;
+    private float mWeight = 60.0f;
     private float mMaxWeight = 200;
     private float mMinWeight = 25;
 
@@ -49,8 +57,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void init() {
-        mHeightWheelView.initViewParam(mHeight, mMaxHeight, mMinHeight);
+        mHeightValue.setText((int) mHeight + "");
+        mWeightValue.setText(mWeight + "");
+        mWeightValueTwo.setText(mWeight + "kg");
 
+
+        mHeightWheelView.initViewParam(mHeight, mMaxHeight, mMinHeight);
         mHeightWheelView.setValueChangeListener(new ScaleRulerView.OnValueChangeListener() {
             @Override
             public void onValueChange(float value) {
@@ -64,6 +76,19 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onValueChange(float value) {
                 mWeightValue.setText(value + "");
+
+                mWeight = value;
+            }
+        });
+
+
+        mWeightRulerView.setParam(DrawUtil.dip2px(10), DrawUtil.dip2px(32), DrawUtil.dip2px(24),
+                DrawUtil.dip2px(14), DrawUtil.dip2px(9), DrawUtil.dip2px(12));
+        mWeightRulerView.initViewParam(mWeight, 20.0f, 200.0f, 1);
+        mWeightRulerView.setValueChangeListener(new DecimalScaleRulerView.OnValueChangeListener() {
+            @Override
+            public void onValueChange(float value) {
+                mWeightValueTwo.setText(value + "kg");
 
                 mWeight = value;
             }
